@@ -20,3 +20,5 @@ local function Bar() -- Good
 
 end
 ```
+
+By using the `local` keyword, you are increasing modularity by explicitly definiting the scope of the value. Functions are also written in `local function` format for readability purposes.

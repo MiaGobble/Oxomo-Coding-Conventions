@@ -9,6 +9,8 @@ Avoiding a central framework allows for easy onboarding and non-strict developme
 
 :::
 
+If you want to learn more about our rationale for not using SSA or central frameworks, [read here](https://blog.igottic.com/misc/2026/03/20/ssa.html).
+
 ## File Structure
 Here is the recommended file structure:
 
@@ -45,7 +47,7 @@ Store any common/shared modules in `Modules` (for example, utility modules). `Pa
 Store any server-specific assets in `Assets`. For example, you would store maps here.
 
 ## Modularization
-Modularization is important to make sure that functionality is divided into isolated scopes, either through functions or modules.
+Modularization is important to make sure that functionality is divided into isolated scopes, either through functions or modules. This makes it easy for team members to navigate a codebase and understand what something does at a glance, but more importantly, it makes it easy to scale. 
 
 Functions should be reserved for splitting functionality that is part of a larger picture in a script or module. For example, a weapon might have functions to shoot, reload, etc.
 

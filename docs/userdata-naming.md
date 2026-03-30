@@ -64,3 +64,5 @@ Like variables, functions need solid names as well. Bear the following in mind:
     * Change drink() to consumeDrink(), since "Drink" can also represent an object, while "Consume" is always a call to action.
 
 The general rule of thumb is to include as much description in a function name as possible without needing the use of comments or documentation.
+
+Good function names are important for inferring what something does as an action. If a developer has to test it to know what it does, then you're doing it wrong.

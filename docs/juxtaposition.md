@@ -30,6 +30,9 @@ Class.__index = Class
 
 -- Types
 type Dictionary = {[string] : any}
+type Class = setmetatable({}, Class) & {
+    --...
+}
 
 -- Constants
 local CONSTANT_A = "Hello,"
@@ -62,7 +65,7 @@ function Class.new()
     return --...
 end
 
-function Class:Method()
+function Class.Method(self : Class)
     return --...
 end
 

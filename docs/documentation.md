@@ -37,3 +37,23 @@ end
 ```
 
 Also, be sure to sprinkle normal comments made with `--` around your code, especially in parts that are hard to understand without further context. If a developer wouldn't be able to understand something, put a comment on it. Put a space before and after typing a comment declaration.
+
+Also, do *not* do large comment blocks to separate parts of code. Proper juxtaposition and more already does that, and it's just more to scroll through. An example of an excessive comment block would be something like this:
+
+```lua
+--------------------------------------------------
+------------// VARIABLES
+--------------------------------------------------
+
+local Foo = 5
+
+--------------------------------------------------
+------------// FUNCTIONS
+--------------------------------------------------
+
+local function Bar()
+
+end
+```
+
+However, basic comments *are* used to separate sections. Read the page on Juxtaposition for more info.
