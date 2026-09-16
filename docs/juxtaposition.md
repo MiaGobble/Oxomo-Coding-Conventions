@@ -36,7 +36,7 @@ type Class = setmetatable({}, Class) & {
 
 -- Constants
 local CONSTANT_A = "Hello,"
-local CONSTANT_B = "World!
+local CONSTANT_B = "World!"
 
 -- Services
 local PlayersService = game:GetService("Players")
@@ -70,4 +70,29 @@ function Class.Method(self : Class)
 end
 
 return Class
+```
+
+## Imports
+Imports should always be required in order that the variables for the folders for those requires are.
+
+Example:
+
+```lua
+-- Imports (not properly ordered)
+local FolderA = path.to.folder
+local FolderB = path.to.folder
+local ModuleB = require(FolderB.module)
+local ModuleC = require(FolderB.module)
+local ModuleA = require(FolderA.module)
+local FolderC = path.to.folder
+local ModuleD = require(FolderC.module)
+
+-- Imports (properly ordered)
+local FolderA = path.to.folder
+local FolderB = path.to.folder
+local FolderC = path.to.folder
+local ModuleA = require(FolderA.module)
+local ModuleB = require(FolderB.module)
+local ModuleC = require(FolderB.module)
+local ModuleD = require(FolderC.module)
 ```
