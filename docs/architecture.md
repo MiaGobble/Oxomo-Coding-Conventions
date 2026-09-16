@@ -103,8 +103,3 @@ Modules are used to separate bigger things to create libraries, databases, and s
 * Etc
 
 Variable modularization is the smallest level of splitting up information into something more digestible. This is something you should eyeball, with the general rule of thumb being "if it's readable, it's good”. Make sure to utilize variables for repeated information.
-
-## Fully Managed Rojo Workflow
-The ideal structure for a project is a fully-managed Rojo workflow, where assets are stored in a `game.rbxlx` file, and then built with code to `build.rbxl` using Lune.
-
-For more details on this workflow, read here: https://miagobble.github.io/Rojo-Project-Example/
