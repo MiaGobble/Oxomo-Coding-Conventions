@@ -12,39 +12,82 @@ Avoiding a central framework allows for easy onboarding and non-strict developme
 If you want to learn more about our rationale for not using SSA or central frameworks, [read here](https://blog.igottic.com/misc/2026/03/20/ssa.html).
 
 ## File Structure
-Here is the recommended file structure:
+Here is the recommended file structure for code:
 
 ```
 .
 └── Project/
     ├── ReplicatedFirst/
+    │   └── Modules
+    ├── ServerScriptService/
     │   ├── Scripts
+    │   ├── SharedModules
+    │   └── ServerData
+    ├── ReplicatedStorage/
+    │   ├── Modules/
+    │   │   └── Packages
+    │   └── Data
+    └── StarterPlayer/
+        └── StarterPlayerScripts/
+            └── Scripts
+```
+
+And this is how other instances should be structured:
+
+```
+.
+└── Project/
+    ├── ReplicatedStorage/
+    │   ├── Assets
+    │   └── Remotes
+    └── ServerStorage/
+        └── ServerAssets
+```
+
+Which results in this final combined structure:
+
+```
+.
+└── Project/
+    ├── ReplicatedFirst/
     │   └── Modules
     ├── ServerScriptService/
     │   ├── Scripts
     │   ├── Modules
-    │   └── Data
+    │   └── ServerData
     ├── ReplicatedStorage/
-    │   ├── Modules/
+    │   ├── SharedModules/
     │   │   └── Packages
     │   ├── Data
     │   ├── Assets
     │   └── Remotes
+    ├── StarterPlayer/
+    │   └── StarterPlayerScripts/
+    │       └── Scripts
     └── ServerStorage/
-        └── Assets
+        └── ServerAssets
 ```
 
 ### `ReplicatedFirst`
-Any local scripts should go under `Scripts`, and any client-specific modules should go under `Modules`. An example of a client-specific module would be an interface component.
+Any client-specific modules should go under `Modules` under `ReplicatedFirst`. An example of a client-specific module would be an interface component.
+
+### `StarterPlayerScripts`
+Any local scripts should go under `Scripts` inside of `StarterPlayerScripts`.
 
 ### `ServerScriptService`
-Any server scripts should go under `Scripts`, and any server-specific modules should go under `Modules`. An example of a server-specific module would be a datastore wrapper.
+Any server scripts should go under `Scripts` under `ServerScriptService`, and any server-specific modules should go under `Modules`. An example of a server-specific module would be a datastore wrapper. Server-only config/constant data should go under the `ServerData` folder.
 
 ### `ReplicatedStorage`
-Store any common/shared modules in `Modules` (for example, utility modules). `Packages` is a folder of packages imported by a package manager, such as Wally (and belongs under `Modules`). `Data` is used to store modules or other data that is constant (for example, game config). `Assets` is used to store non-code instances that is used by client or server. `Remotes` is exclusively for remote events and remote functions.
+Store any common/shared modules in `SharedModules` (for example, utility modules). `Packages` is a folder of packages imported by a package manager, such as Wally (and belongs under `Modules`). `Data` is a folder used to store modules or other data that is constant (for example, game config). `Assets` is used to store non-code instances that is used by client or server. `Remotes` is exclusively for remote events and remote functions.
+
+:::info
+
+Remotes can either be a folder of remote instances or a module representing remotes from a networking module.
+
+:::
 
 ### `ServerStorage`
-Store any server-specific assets in `Assets`. For example, you would store maps here.
+Store any server-specific assets in `ServerAssets`. For example, you would store maps here.
 
 ## Modularization
 Modularization is important to make sure that functionality is divided into isolated scopes, either through functions or modules. This makes it easy for team members to navigate a codebase and understand what something does at a glance, but more importantly, it makes it easy to scale. 
