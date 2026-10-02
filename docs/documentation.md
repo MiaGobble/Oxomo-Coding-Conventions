@@ -24,19 +24,20 @@ Also when writing Moonwave comments, opt to always use `@param`, `@class`, and `
 --[=[
     Thing that does thing.
 
-    ```lua
-    Module:DoThing(5)
+    ``lua
+    -- Note: This example uses 2 instead of 3 "`" because of how these docs are written.
+    Module.DoThing(5)
     ``
 
     @param foo number -- The parameter that does thing
 ]=]
 
-function Module:DoThing(foo : number)
+function Module.DoThing(foo : number)
     --...
 end
 ```
 
-Also, be sure to sprinkle normal comments made with `--` around your code, especially in parts that are hard to understand without further context. If a developer wouldn't be able to understand something, put a comment on it. Put a space before and after typing a comment declaration.
+Also, be sure to sprinkle normal comments made with `--` (no more than two dashes) around your code, especially in parts that are hard to understand without further context. If a developer wouldn't be able to understand something, put a comment on it. Put a space before and after typing a comment declaration.
 
 Also, do *not* do large comment blocks to separate parts of code. Proper juxtaposition and more already does that, and it's just more to scroll through. An example of an excessive comment block would be something like this:
 
