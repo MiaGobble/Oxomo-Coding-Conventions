@@ -40,6 +40,7 @@ Things to note:
 * `.new` makes a variable of the top of that scope called `self`, which is an unsealed metatable
 * Using `.new` calls `:Init()` before returning `self`
 * `self` is typechecked
+* Methods are defined as `Object.Method(self : Object, ...)` but called using `:` notation (`Object:Method(...)`)
 
 We write OOP in this way because of readability and ease of use. It's more faux-OOP than anything, but it gets the same job done.
 
