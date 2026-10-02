@@ -6,7 +6,13 @@ The ideal structure for a project is a fully-managed Rojo workflow, where assets
 
 A fully managed workflow gives version control over *everything*, not just code. This can provide huge advantages when in a pickle.
 
-For more details on this workflow, read here: https://miagobble.github.io/Rojo-Project-Example/
+You can use this Rojo project template to get started: https://github.com/MiaGobble/Rojo-Project-Example
+
+It can installed into a blank folder using the following command:
+
+```bash
+git clone https://github.com/MiaGobble/Rojo-Project-Example .
+```
 
 ## Toolchain Manager
 Many Roblox projects opt to use Aftman as the toolchain manager of choice. However, we opt to use Rokit, which is backwards-compatible with Aftman.
