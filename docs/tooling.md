@@ -15,14 +15,14 @@ git clone https://github.com/MiaGobble/Rojo-Project-Example .
 ```
 
 ## Toolchain Manager
-Many Roblox projects opt to use Aftman as the toolchain manager of choice. However, we opt to use Rokit, which is backwards-compatible with Aftman.
+Many Roblox projects opt to use Aftman as the toolchain manager of choice. However, we opt to use Rokit, which is backwards-compatible with Aftman. Do not use Aftman, as it is no longer updated.
 
 Read about Rokit here: https://github.com/rojo-rbx/rokit
 
 ## Package Manager
 Previously, we used Wally to import packages. However, we have opted to now use Pesde, which functions better and is more feature-rich.
 
-Many (but not all) Wally packages are also on Pesde.
+Many (but not all) Wally packages are also on Pesde. Do not use Wally.
 
 Read about Pesde here: https://pesde.dev/
 
