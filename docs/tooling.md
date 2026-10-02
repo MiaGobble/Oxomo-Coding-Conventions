@@ -65,3 +65,11 @@ Some other basic essential libraries that are really handy to use include:
 * Cleanup (like Trove or Bucket)
 * UI Stories (like UI Labs)
 * Promise (any common Promise library works)
+
+## Preferred Libraries
+We prefer to always use the following libraries in our games:
+* Seam, for UI and gameplay states (https://seam.igottic.com/)
+* Praxis, for handy utilities and common modules (https://praxis.igottic.com/) (NOTE: Import every Praxis module separately using Pesde)
+* ExpressivePrompts, for proximity prompts (https://github.com/MiaGobble/ExpressivePrompts)
+* ProfileStore, for data saving (https://madstudioroblox.github.io/ProfileStore/)
+* Promise, for handling async behavior (https://eryn.io/roblox-lua-promise/)
