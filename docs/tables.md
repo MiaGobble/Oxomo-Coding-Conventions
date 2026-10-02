@@ -44,3 +44,24 @@ local a = bar.a -- ok
 local b = bar["b"] -- not ok
 local c = bar["letter c"] -- ok
 ```
+
+## Trailing commas
+Every table entry should end with a comma, even a trailing one.
+
+Good example:
+```lua
+local foo = {
+    a = 1,
+    b = 2,
+    c = 3,
+}
+```
+
+Bad example:
+```lua
+local foo = {
+    a = 1,
+    b = 2,
+    c = 3
+}
+```
