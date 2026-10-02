@@ -32,3 +32,5 @@ if not x then
     error("X isn't a valid value!")
 end
 ```
+
+Avoid using `assert()`, stick to `error()`.

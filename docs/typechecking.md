@@ -1,7 +1,7 @@
 # Typechecking
 Typechecking in Luau exists to provide more information to a developer with the same amount of code and comments. For example, you would typecheck a library's functions to make it clear the developer what types of data they are inputting and what they are getting back. Typechecking also improves intellisense/autofill, allowing the developer to code faster.
 
-Typecheck a reasonable amount; nobody should guess if "Value" is a number, string, or table. Overtyping is still annoying.
+Type every public function (both param and return), and type variables when not obvious to reader or linter. Ensure every class and module has proper typing for ease of use.
 
 Bad example:
 

@@ -20,7 +20,7 @@ Juxtaposition is extremely important for consistency and readability, since it a
 
 :::
 
-Types, constants, services, imports, types extended, constants extended, and variables all are separated into sections by whitespace and have a comment of each section saying what it is. "Extended" sections only should exist if they need something from imports or something else.
+Types, constants, services, imports, types extended, constants extended, and variables all are separated into sections by whitespace and have a comment of each section saying what it is. "Extended" sections only should exist if they need something from imports or something else. Do not add comments for functions, methods, or anything else that is functional.
 
 Below is an example script showing proper juxtaposition and comments:
 

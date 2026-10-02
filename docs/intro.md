@@ -5,7 +5,9 @@ sidebar_position: 1
 # Intro
 These conventions cover a number of topics, such as for juxtaposition, capitalization, and more.
 
-Anything that isn't listed on these docs does not have a specific convention for it. If you feel something is missing, please make an issue on the GitHub repository.
+For any convention unspecified, match the nearest golden example; do not invent a style.
+
+If you feel something is missing, please make an issue on the GitHub repository.
 
 ## Additional general practices
 Consider the following in addition to the rest of the conventions, as general advice:

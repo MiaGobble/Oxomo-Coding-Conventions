@@ -22,11 +22,13 @@ function Object.new(foo : number, bar : string)
     return self
 end
 
+-- Called as Object:Init()
 function Object.Init(self : Object)
     -- Initialization
     self:Method()
 end
 
+-- Called as Object:Method()
 function Object.Method(self : Object)
     -- ...
 end

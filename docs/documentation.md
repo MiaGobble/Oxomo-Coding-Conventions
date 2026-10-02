@@ -3,10 +3,7 @@ All documentation in a codebase should be in Moonwave format, which is very read
 
 Moonwave as a tool for generating doc websites is separate from your codebase; you can learn about it here: https://eryn.io/moonwave/. This page covers the documentation format, not the page generation tool.
 
-Documentation should be written in Moonwave format for the following:
-* High-level modules (ones that are used across the game, not a random sub-module)
-* Open-sourced modules
-* Modules that are critical for functionality
+Documentation should be written in Moonwave format for every module under `SharedModules`, `Packages`, and anything else top-level. Skip private helper or sub-module scripts.
 
 When writing Moonwave comments, use comment blocks by starting with `--[=[` and ending with `]=]`. For example:
 

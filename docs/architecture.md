@@ -1,5 +1,5 @@
 # Architecture
-Everything works best when using a multi-script architecture. This means there is no centralized framework, and instead code is just modularized and loaded normally. Multiple scripts are allowed on the client and server (just don't be excessive), but they must be in their respective structure folders.
+Everything works best when using a multi-script architecture. This means there is no centralized framework, and instead code is just modularized and loaded normally. Multiple scripts are allowed on the client and server, but they must be in their respective structure folders. Ensure a new script is only created when it concerns a different top-level system.
 
 All script, asset, config, and other file names are in *pacal case* (`PascalCase`) capitalization.
 
@@ -104,7 +104,7 @@ Modules are used to separate bigger things to create libraries, databases, and s
 * Classes
 * Etc
 
-Variable modularization is the smallest level of splitting up information into something more digestible. This is something you should eyeball, with the general rule of thumb being "if it's readable, it's good”. Make sure to utilize variables for repeated information.
+Variable modularization is the smallest level of splitting up information into something more digestible. This is something you should eyeball, with the general rule of thumb being "if it's readable, it's good”. Make sure to utilize variables for repeated information, and split one variable into more if complex operations or algorithms are being done.
 
 Always require module using dot notation when possible:
 
