@@ -23,6 +23,7 @@ local function GetOtherFunction(foo : number) : (string) -> nil
 end
 ```
 
+## Exporting and storing types
 Types should be exported from modules when they represent data that is usable from outside the module, like so:
 
 ```lua
@@ -30,3 +31,6 @@ export type MyType = string | number
 ```
 
 Additionally, making modules exclusively for storing types is recommended when creating complex libraries or systems.
+
+## Type definition whitespace
+Use `Variable : Type` notation instead of `Variable: Type`. This extra space improves readability!
