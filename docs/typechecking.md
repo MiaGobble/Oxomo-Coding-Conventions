@@ -34,3 +34,6 @@ Additionally, making modules exclusively for storing types is recommended when c
 
 ## Type definition whitespace
 Use `Variable : Type` notation instead of `Variable: Type`. This extra space improves readability!
+
+## Linting mode
+Use the default linting mode for typechecking. Do not use `--!strict`.
