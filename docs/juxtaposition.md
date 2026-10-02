@@ -30,7 +30,7 @@ Class.__index = Class
 
 -- Types
 type Dictionary = {[string] : any}
-type Class = setmetatable({}, Class) & {
+type Class = typeof(setmetatable({}, Class)) & {
     --...
 }
 
