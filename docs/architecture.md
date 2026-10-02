@@ -21,10 +21,10 @@ Here is the recommended file structure for code:
     │   └── Modules
     ├── ServerScriptService/
     │   ├── Scripts
-    │   ├── SharedModules
+    │   ├── Modules
     │   └── ServerData
     ├── ReplicatedStorage/
-    │   ├── Modules/
+    │   ├── SharedModules/
     │   │   └── Packages
     │   └── Data
     └── StarterPlayer/
