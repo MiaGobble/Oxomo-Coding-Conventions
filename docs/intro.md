@@ -7,7 +7,7 @@ These conventions cover a number of topics, such as for juxtaposition, capitaliz
 
 Anything that isn't listed on these docs does not have a specific convention for it. If you feel something is missing, please make an issue on the GitHub repository.
 
-## Additional notes
+## Additional general practices
 Consider the following in addition to the rest of the conventions, as general advice:
 * Keep code to reasonable minimum.
 * Do not obfuscate or keep statements on single lines.
@@ -16,6 +16,7 @@ Consider the following in addition to the rest of the conventions, as general ad
 * Do not cache inline functions, such as those from the math or cframe libraries, for example. Luau includes inline caching.
 * Assign variables to the smallest possible scope.
 * Return in a function as soon as possible.
+* Avoid yielding code (like with `WaitForChild`) when possible.
 
 ## Example OOP Module Script
 
