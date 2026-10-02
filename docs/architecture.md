@@ -104,6 +104,13 @@ Modules are used to separate bigger things to create libraries, databases, and s
 
 Variable modularization is the smallest level of splitting up information into something more digestible. This is something you should eyeball, with the general rule of thumb being "if it's readable, it's good”. Make sure to utilize variables for repeated information.
 
+Always require module using dot notation when possible:
+
+```lua
+local ModuleA = require(path.to.module) -- Good
+local ModuleB = require("path/to/module") -- Bad
+```
+
 ## Don't use a central framework
 Seriously, don't. It's annoying to work with and causes friction in too many places. Central frameworks (like Knit) do not solve any real problems.
 
