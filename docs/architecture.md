@@ -80,6 +80,8 @@ Any server scripts should go under `Scripts` under `ServerScriptService`, and an
 ### `ReplicatedStorage`
 Store any common/shared modules in `SharedModules` (for example, utility modules). `Packages` is a folder of packages imported by a package manager, such as Wally (and belongs under `Modules`). `Data` is a folder used to store modules or other data that is constant (for example, game config). `Assets` is used to store non-code instances that is used by client or server. `Remotes` is exclusively for remote events and remote functions.
 
+Client-only modules should ALWAYS go under `ReplicatedFirst/Modules`. Server-only modules should ALWAYS go under `ServerScriptService/Modules`. This better respects the client-server boundary.
+
 :::info
 
 Remotes can either be a folder of remote instances or a module representing remotes from a networking module.
