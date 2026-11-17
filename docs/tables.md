@@ -5,7 +5,7 @@ See [capitalization](./capitalization.md) and [userdata naming](./userdata-namin
 A sealed table looks like this:
 
 ```luau
-local foo = {
+local Foo = {
     A = 1,
     B = 2,
     C = 3,
@@ -15,11 +15,11 @@ local foo = {
 And an unsealed table looks like this:
 
 ```luau
-local foo = {}
+local Foo = {}
 
-foo.A = 1
-foo.B = 2
-foo.C = 3
+Foo.A = 1
+Foo.B = 2
+Foo.C = 3
 ```
 
 Sealed tables are reserved for constants such as configurations or settings. Modules, classes, etc are all to be declared and mutated in an unsealed table.
@@ -64,4 +64,15 @@ local Foo = {
     B = 2,
     C = 3
 }
+```
+
+## Say no to padded tables
+As a small detail, we avoid padded tables. This means you write single-line tables without spaces on each end.
+
+Example:
+
+```luau
+local MyTable = {X = 5} -- Good
+
+local MyTable = { X = 5 } -- Bad
 ```
