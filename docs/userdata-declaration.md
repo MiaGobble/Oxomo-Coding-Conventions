@@ -40,3 +40,34 @@ The only other time you use it is when writing services as variables, like so:
 const ReplicatedStorage = game:GetService("ReplicatedStorage")
 const PlayersService = game:GetService("Players")
 ```
+
+## Single-line function signatures
+Functions should always be written in one line for improved readability. For example, instead of writing:
+
+```luau
+local function MyFunction(
+    X : string,
+    Y : string,
+    Z : string
+)
+    print("...")
+end
+```
+
+You would write:
+
+```luau
+local function MyFunction(X : string, Y : string, Z : string)
+    print("...")
+end
+```
+
+However, signatures **do not need to be written the same as calls!** This means that it's totally acceptable to write multi-line calls, like so:
+
+```luau
+MyFunction(
+    "a",
+    "b",
+    "c",
+)
+```
