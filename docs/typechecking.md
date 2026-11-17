@@ -32,8 +32,8 @@ export type MyType = string | number
 
 Additionally, making modules exclusively for storing types is recommended when creating complex libraries or systems.
 
-## Type definition whitespace
-Use `Variable : Type` notation instead of `Variable: Type`. This extra space improves readability!
+## Type colons spaced
+Use `Variable : Type` notation instead of `Variable: Type`. This extra space before the colon improves readability!
 
 ## Linting mode
 Use the default linting mode for typechecking. Do not use `--!strict`.
