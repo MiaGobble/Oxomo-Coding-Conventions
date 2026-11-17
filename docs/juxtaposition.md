@@ -96,3 +96,40 @@ local ModuleB = require(FolderB.module)
 local ModuleC = require(FolderB.module)
 local ModuleD = require(FolderC.module)
 ```
+
+## Early escaping
+Always prefer to escape a scope as fast as possible with `continue` and `return`.
+
+For example, instead of writing this:
+
+```luau
+local function SlowEscape(X : boolean)
+    if X then
+        for Index = 1, 10 do
+            if Index ~= 5 then
+                print(Index)
+            end
+        end
+    end
+end
+```
+
+You would write this:
+
+```luau
+local function FastEscape(X : boolean)
+    if not X then
+        return
+    end
+
+    for Index = 1, 10 do
+        if Index == 5 then
+            continue
+        end
+
+        print(Index)
+    end
+end
+```
+
+While it does take more lines of code, you drastically improve readability and make it hard to mislead coworkers with what your code is doing.

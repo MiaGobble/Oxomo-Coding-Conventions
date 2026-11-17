@@ -13,7 +13,6 @@ Consider the following in addition to the rest of the conventions, as general ad
 * Do not repeat yourself.
 * Do not cache inline functions, such as those from the math or cframe libraries, for example. Luau includes inline caching.
 * Assign variables to the smallest possible scope.
-* Return in a function as soon as possible.
 * Avoid yielding code (like with `WaitForChild`) when possible.
 
 ## Example OOP Module Script
