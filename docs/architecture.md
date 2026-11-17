@@ -68,6 +68,12 @@ Which results in this final combined structure:
         └── ServerAssets
 ```
 
+::: danger
+
+**Do not name modules after instance APIs!** For example, don't name a module `Clone`, `Destroy`, etc.
+
+:::
+
 ### `ReplicatedFirst`
 Any client-specific modules should go under `Modules` under `ReplicatedFirst`. An example of a client-specific module would be an interface component.
 
