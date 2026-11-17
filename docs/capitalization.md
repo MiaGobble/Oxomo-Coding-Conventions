@@ -7,7 +7,7 @@ There are four main types of capitalization:
 * *Upper case* (`UPPER_CASE`), which makes every letter capitalized, with words separated by underscores
 * *Snake case* (`snake_case`), which makes every letter lowercase
 
-In the Oxomo Coding Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
+In the Oxomo Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
 
 ::: warning
 

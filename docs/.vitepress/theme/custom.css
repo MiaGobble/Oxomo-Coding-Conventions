@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bakbak+One&display=swap');
+
+:root {
+	--oxomo-white: #ffffff;
+	--oxomo-black: #000000;
+	--oxomo-gray: #8a8a8a;
+	--oxomo-dark: #1f1f1f;
+	--oxomo-muted: #454545;
+	--oxomo-nav: #121212;
+	--oxomo-green: #04f67d;
+
+	--vp-font-family-base: 'Bai Jamjuree', system-ui, sans-serif;
+	--vp-font-family-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
+		Consolas, monospace;
+
+	/* Accent for links / active states — CTAs use gray like oxomogames.com */
+	--vp-c-brand-1: var(--oxomo-green);
+	--vp-c-brand-2: #03d96d;
+	--vp-c-brand-3: #02c261;
+	--vp-c-brand-soft: rgb(4 246 125 / 14%);
+
+	--vp-c-bg: var(--oxomo-dark);
+	--vp-c-bg-alt: var(--oxomo-black);
+	--vp-c-bg-elv: #181818;
+	--vp-c-bg-soft: #2a2a2a;
+
+	--vp-c-border: var(--oxomo-muted);
+	--vp-c-divider: var(--oxomo-muted);
+	--vp-c-gutter: var(--oxomo-black);
+
+	--vp-c-text-1: var(--oxomo-white);
+	--vp-c-text-2: #d8d8d8;
+	--vp-c-text-3: var(--oxomo-gray);
+
+	--vp-c-default-1: #3a3a3a;
+	--vp-c-default-2: var(--oxomo-muted);
+	--vp-c-default-3: #333333;
+	--vp-c-default-soft: rgb(69 69 69 / 35%);
+
+	--vp-home-hero-name-color: var(--oxomo-white);
+	--vp-home-hero-name-background: transparent;
+
+	--vp-button-brand-border: transparent;
+	--vp-button-brand-text: var(--oxomo-white);
+	--vp-button-brand-bg: var(--oxomo-gray);
+	--vp-button-brand-hover-border: transparent;
+	--vp-button-brand-hover-text: var(--oxomo-white);
+	--vp-button-brand-hover-bg: #9a9a9a;
+	--vp-button-brand-active-border: transparent;
+	--vp-button-brand-active-text: var(--oxomo-white);
+	--vp-button-brand-active-bg: #757575;
+
+	--vp-button-alt-border: transparent;
+	--vp-button-alt-text: var(--oxomo-white);
+	--vp-button-alt-bg: var(--oxomo-nav);
+	--vp-button-alt-hover-border: transparent;
+	--vp-button-alt-hover-text: var(--oxomo-white);
+	--vp-button-alt-hover-bg: #1c1c1c;
+	--vp-button-alt-active-border: transparent;
+	--vp-button-alt-active-text: var(--oxomo-white);
+	--vp-button-alt-active-bg: #0c0c0c;
+}
+
+.dark {
+	--vp-c-bg: var(--oxomo-dark);
+	--vp-c-bg-alt: var(--oxomo-black);
+	--vp-c-bg-elv: #181818;
+	--vp-c-bg-soft: #2a2a2a;
+	--vp-c-border: var(--oxomo-muted);
+	--vp-c-divider: var(--oxomo-muted);
+	--vp-c-gutter: var(--oxomo-black);
+	--vp-c-text-1: var(--oxomo-white);
+	--vp-c-text-2: #d8d8d8;
+	--vp-c-text-3: var(--oxomo-gray);
+}
+
+body {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.VPHero .name,
+.VPFeatures .title,
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.VPSidebarItem.level-0 > .item .text {
+	font-family: 'Bakbak One', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.VPHero .name {
+	-webkit-text-fill-color: unset;
+	background: none;
+	color: var(--oxomo-white);
+	line-height: 1.15;
+}
+
+.VPHero .tagline {
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--oxomo-white);
+	max-width: 36rem;
+}
+
+.VPNavBarTitle .title {
+	font-family: 'Bakbak One', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.VPNavBar .logo {
+	height: 28px;
+}
+
+.VPButton {
+	border-radius: 4px !important;
+	font-family: 'Bai Jamjuree', sans-serif !important;
+	font-weight: 400 !important;
+	font-size: 18px !important;
+	padding: 0 21px !important;
+	height: 42px !important;
+	line-height: 42px !important;
+}
+
+.VPButton.medium {
+	border-radius: 4px !important;
+}
+
+.VPHome {
+	margin-bottom: 64px;
+}
+
+.VPHero {
+	padding: 72px 24px 40px !important;
+}
+
+@media (min-width: 960px) {
+	.VPHero.has-image .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 48px;
+	}
+
+	.VPHero.has-image .main {
+		max-width: 560px;
+		width: 100%;
+	}
+}
+
+.VPHero .image {
+	order: 2;
+	margin: 0 !important;
+	min-height: 0 !important;
+	flex: 0 0 auto;
+}
+
+.VPHero .image-container {
+	position: relative !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	width: 280px !important;
+	height: 280px !important;
+	margin: 0 !important;
+	transform: none !important;
+}
+
+.VPHero .image-bg {
+	display: none !important;
+}
+
+.VPHero .image-src {
+	position: static !important;
+	top: auto !important;
+	left: auto !important;
+	transform: none !important;
+	width: 100% !important;
+	max-width: 280px !important;
+	max-height: 280px !important;
+	height: auto !important;
+	object-fit: contain;
+}
+
+.VPFeatures {
+	padding: 8px 24px 64px !important;
+}
+
+.VPFeatures .container {
+	max-width: 1152px !important;
+	margin: 0 auto !important;
+}
+
+.VPFeatures .items {
+	display: grid !important;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+	margin: 0 !important;
+}
+
+.VPFeatures .item {
+	width: auto !important;
+	max-width: none !important;
+	padding: 0 !important;
+}
+
+.VPFeature {
+	border: none !important;
+	border-radius: 4px !important;
+	background: var(--oxomo-black) !important;
+	height: 100%;
+}
+
+.VPFeature .box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 24px !important;
+}
+
+.VPFeature .title {
+	color: var(--oxomo-white);
+	font-size: 1.05rem;
+	line-height: 1.25;
+}
+
+.VPFeature .details {
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--oxomo-white);
+	opacity: 0.92;
+	padding-top: 10px;
+}
+
+@media (max-width: 960px) {
+	.VPHero {
+		padding-top: 48px !important;
+		text-align: center;
+	}
+
+	.VPHero .actions {
+		justify-content: center;
+	}
+
+	.VPHero .tagline {
+		margin-inline: auto;
+	}
+
+	.VPHero .image {
+		margin: 24px auto 0 !important;
+	}
+
+	.VPHero .image-container {
+		width: 200px !important;
+		height: 200px !important;
+	}
+
+	.VPHero .image-src {
+		max-width: 200px !important;
+		max-height: 200px !important;
+	}
+
+	.VPFeatures .items {
+		grid-template-columns: 1fr;
+	}
+}
+
+.VPNavBarMenuLink {
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-weight: 600;
+}
+
+.VPLink.active:not(.link),
+.VPSidebarItem.is-active > .item .link > .text {
+	color: var(--oxomo-green) !important;
+}
+
+.vp-doc a {
+	color: var(--oxomo-green);
+}
+
+.vp-doc a:hover {
+	color: #03d96d;
+}

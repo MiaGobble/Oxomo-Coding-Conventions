@@ -2,22 +2,21 @@
 layout: home
 
 hero:
-  name: Oxomo Coding Conventions
-  text: Readable Luau, first.
-  tagline: Practices and styles for Roblox Luau that prioritize organization and collaborative efficiency.
+  name: Oxomo Conventions
+  tagline: Conventions with a focus put on beautiful and readable code that scales perfectly.
+  image:
+    src: /logo-white.png
+    alt: Oxomo
   actions:
     - theme: brand
-      text: Read the guide
+      text: Read more
       link: /intro
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/MiaGobble/Oxomo-Coding-Conventions
 
 features:
   - title: Multi-script architecture
-    details: No central frameworks. Modular scripts and modules in a clear client/server layout.
-  - title: Consistent style
-    details: Juxtaposition, capitalization, naming, tables, and OOP formats that stay predictable across a team.
-  - title: Practical tooling
-    details: Fully managed Rojo, Rokit, Pesde, and preferred libraries that keep projects easy to update.
+    details: Avoiding a central framework reduces onboarding friction and adds flexibility.
+  - title: Intentional styling
+    details: We consistently update our conventions to stay modern and effective at solving ugly code.
+  - title: Optimized workflow
+    details: We have a solid workflow for Roblox projects that focuses on feature-rich efficiency.
 ---

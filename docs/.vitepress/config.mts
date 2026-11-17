@@ -10,11 +10,30 @@ const luauGrammar = JSON.parse(
 )
 
 export default defineConfig({
-	title: 'Oxomo Coding Conventions',
+	title: 'Oxomo Conventions',
 	description:
 		'Practices and styles for Roblox Luau that prioritize readability and organization.',
 	cleanUrls: true,
 	lastUpdated: true,
+	appearance: 'force-dark',
+
+	head: [
+		[
+			'link',
+			{
+				rel: 'preconnect',
+				href: 'https://fonts.googleapis.com',
+			},
+		],
+		[
+			'link',
+			{
+				rel: 'preconnect',
+				href: 'https://fonts.gstatic.com',
+				crossorigin: '',
+			},
+		],
+	],
 
 	markdown: {
 		languages: [
@@ -32,6 +51,12 @@ export default defineConfig({
 	},
 
 	themeConfig: {
+		logo: {
+			src: '/logo-white.png',
+			alt: 'Oxomo',
+		},
+		siteTitle: 'Oxomo Conventions',
+
 		nav: [
 			{ text: 'Guide', link: '/intro' },
 			{
