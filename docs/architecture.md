@@ -126,3 +126,6 @@ Generally, we're against single-script architecture. Read more here: https://blo
 
 ## Files format
 Luau code should always be in `.luau` files, not `.lua`.
+
+## Avoid script-child instances
+Placing non-script, non-folder asset instances inside of your code (sounds, models, etc) is bad practice. Your assets should always be under a single source of truth to better improve navigation.
