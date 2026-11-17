@@ -13,6 +13,7 @@ export default defineConfig({
 	title: 'Oxomo Conventions',
 	description:
 		'Practices and styles for Roblox Luau that prioritize readability and organization.',
+	base: '/Oxomo-Coding-Conventions/',
 	cleanUrls: true,
 	lastUpdated: true,
 	appearance: 'force-dark',
