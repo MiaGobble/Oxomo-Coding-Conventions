@@ -35,12 +35,12 @@ type Class = typeof(setmetatable({}, Class)) & {
 }
 
 -- Constants
-local CONSTANT_A = "Hello,"
-local CONSTANT_B = "World!"
+const CONSTANT_A = "Hello,"
+const CONSTANT_B = "World!"
 
 -- Services
-local PlayersService = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+const PlayersService = game:GetService("Players")
+const ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- Imports
 local Common = ReplicatedStorage.Common
@@ -52,7 +52,7 @@ local ModuleB = require(path.to.module)
 type SpecialTypeArray = {ModuleA.SpecialType}
 
 -- Constants extended
-local OTHER_CONSTANT = ModuleB.SomeSetting
+const OTHER_CONSTANT = ModuleB.SomeSetting
 
 -- Variables
 local ThingThatChanges = 0

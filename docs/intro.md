@@ -23,7 +23,7 @@ local DynamicPart = {}
 DynamicPart.__index = DynamicPart
 
 -- Constants
-local DEFAULT_PART_PROPERTIES = {
+const DEFAULT_PART_PROPERTIES = {
     Size = Vector3.one * 5,
     Color = Color3.fromRGB(255, 255, 255),
     Transparency = 0.5,
@@ -33,7 +33,7 @@ local DEFAULT_PART_PROPERTIES = {
 }
 
 -- Services
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+const ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- Imports
 local SharedModules = ReplicatedStorage.SharedModules

@@ -17,14 +17,13 @@ When writing Moonwave comments, use comment blocks by starting with `--[=[` and 
 
 Also when writing Moonwave comments, opt to always use `@param`, `@class`, and `@return` tags when applicable, and make sure to describe parameters and return data. Anything else is optional but nice to have. When writing a description for a function, make sure to include a Luau snippet. For example:
 
-````md
 ```luau
 --[=[
     Thing that does thing.
 
-    ```luau
+    ``luau
     Module.DoThing(5)
-    ```
+    ``
 
     @param foo number -- The parameter that does thing
 ]=]
@@ -33,7 +32,6 @@ function Module.DoThing(foo : number)
     --...
 end
 ```
-````
 
 Also, be sure to sprinkle normal comments made with `--` (no more than two dashes) around your code, especially in parts that are hard to understand without further context. If a developer wouldn't be able to understand something, put a comment on it. Put a space before and after typing a comment declaration.
 

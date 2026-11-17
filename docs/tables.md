@@ -6,9 +6,9 @@ A sealed table looks like this:
 
 ```luau
 local foo = {
-    a = 1,
-    b = 2,
-    c = 3,
+    A = 1,
+    B = 2,
+    C = 3,
 }
 ```
 
@@ -17,9 +17,9 @@ And an unsealed table looks like this:
 ```luau
 local foo = {}
 
-foo.a = 1
-foo.b = 2
-foo.c = 3
+foo.A = 1
+foo.B = 2
+foo.C = 3
 ```
 
 Sealed tables are reserved for constants such as configurations or settings. Modules, classes, etc are all to be declared and mutated in an unsealed table.
@@ -30,19 +30,19 @@ The reason modules and classes use unsealed tables is because of readability. If
 Use plain `key` syntax for writing dictionaries when possible, but if there are any entries that cannot follow that, then use `["key"]` syntax. This is easier to write and read. Example:
 
 ```luau
-local bar = {
-    a = 1, -- ok
-    ["b"] = 2, -- not ok
-    ["letter c"] = 3, -- ok
+local Bar = {
+    A = 1, -- ok
+    ["B"] = 2, -- not ok
+    ["Letter C"] = 3, -- ok
 }
 ```
 
 Use dot (`table.value`) notation for accessing values in a dictionary table when possible (as opposed to something like `table["value"]`). Again, it's easier to write and read. Example:
 
 ```luau
-local a = bar.a -- ok
-local b = bar["b"] -- not ok
-local c = bar["letter c"] -- ok
+local A = bar.A -- ok
+local B = bar["B"] -- not ok
+local C = bar["Letter C"] -- ok
 ```
 
 ## Trailing commas
@@ -50,18 +50,18 @@ Every table entry should end with a comma, even a trailing one.
 
 Good example:
 ```luau
-local foo = {
-    a = 1,
-    b = 2,
-    c = 3,
+local Foo = {
+    A = 1,
+    B = 2,
+    C = 3,
 }
 ```
 
 Bad example:
 ```luau
-local foo = {
-    a = 1,
-    b = 2,
-    c = 3
+local Foo = {
+    A = 1,
+    B = 2,
+    C = 3
 }
 ```

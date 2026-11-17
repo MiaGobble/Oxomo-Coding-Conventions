@@ -18,10 +18,10 @@ Bear in mind the following rules when deciding a name for any variables:
 Bad example:
 
 ```luau
-local CONFIG = {s = 5}
+const CONFIG = {s = 5}
 
-local plrs = game:GetService("Players")
-local repstore = game:GetService("ReplicatedStorage")
+const plrs = game:GetService("Players")
+const repstore = game:GetService("ReplicatedStorage")
 
 local pks = repstore:WaitForChild("Packages")
 local seam = require(pks.Seam)
@@ -35,10 +35,10 @@ local gui = plr.PlayerGui
 Good example:
 
 ```luau
-local CONFIG = {Speed = 5}
+const CONFIG = {Speed = 5}
 
-local PlayersService = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+const PlayersService = game:GetService("Players")
+const ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Packages = ReplicatedStorage:WaitForChild("Packages")
 local Seam = require(Packages.Seam)

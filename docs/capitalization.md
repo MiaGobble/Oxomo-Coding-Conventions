@@ -19,7 +19,7 @@ Be sure to read the exceptions below for cases that don't use *pascal case*.
 Constants, which are variables that are declared once at the top of the script and never change, are always *upper case*. In this case, only do this casing if the variable is in the root part of the script towards the top, not if it's in another function.
 
 ```luau
-local MY_CONSTANT = 10 -- Constant
+const MY_CONSTANT = 10 -- Constant
 local MyVariable = 10 -- Not constant
 
 MyVariable = 20
@@ -62,7 +62,7 @@ end
 Configuration refers to tables or other userdata that act like constants shared across a project. Indexes in these config files are still in *pascal case*.
 
 ```luau
-local SETTINGS = {
+const SETTINGS = {
     Setting0 = "",
     Setting1 = "",
     --...
