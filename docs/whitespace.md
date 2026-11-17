@@ -19,7 +19,19 @@ end
 Do not use unneeded indentation, and maintain indentation so that it matches the scope in best possible way.
 
 ## Line breaks
-Separate different sections of userdata and more with line breaks, as shown in [juxtaposition](./juxtaposition.md).
+Separate siblings of work with line breaks. For example:
+
+```luau
+local A = 5
+local B = 3
+local C = 1
+
+DoThing1()
+DoThing2()
+A = 20
+
+return 100
+```
 
 The rule of thumb is to always prefer a line break when programming anything if it means your code becomes more readable.
 
