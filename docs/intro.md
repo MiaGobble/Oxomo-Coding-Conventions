@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Intro
 These conventions cover a number of topics, such as for juxtaposition, capitalization, and more.
 
@@ -22,7 +18,7 @@ Consider the following in addition to the rest of the conventions, as general ad
 
 ## Example OOP Module Script
 
-```lua
+```luau
 local DynamicPart = {}
 DynamicPart.__index = DynamicPart
 

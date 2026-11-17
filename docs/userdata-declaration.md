@@ -3,7 +3,7 @@ Always use the `local` keyword within any scope, including the top one. Function
 
 When defining functions, put `local function` before the name, not after.
 
-```lua
+```luau
 Foo = 5 -- Bad
 
 local Foo = 5 -- Good

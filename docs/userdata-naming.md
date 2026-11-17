@@ -17,7 +17,7 @@ Bear in mind the following rules when deciding a name for any variables:
 
 Bad example:
 
-```lua
+```luau
 local CONFIG = {s = 5}
 
 local plrs = game:GetService("Players")
@@ -34,7 +34,7 @@ local gui = plr.PlayerGui
 
 Good example:
 
-```lua
+```luau
 local CONFIG = {Speed = 5}
 
 local PlayersService = game:GetService("Players")
@@ -49,7 +49,7 @@ local Player = PlayersService.LocalPlayer
 local PlayerGui = Player.PlayerGui
 ```
 
-:::warning 
+::: warning 
 
 The number one counter-argument to keeping consistent styling and good naming is "already knowing what everything does". That does not cut it. Whether you are working by yourself or with others, at some point in the future the code will need to be iterated upon, and in order to do so there should not be time wasted asking "what does everything do?”
 

@@ -1,7 +1,7 @@
 # OOP Format
 Follow this format for writing OOP code:
 
-```lua
+```luau
 local Object = {}
 Object.__index = Object
 

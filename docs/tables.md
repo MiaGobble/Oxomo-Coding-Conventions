@@ -4,7 +4,7 @@ See [capitalization](./capitalization.md) and [userdata naming](./userdata-namin
 ## Sealed vs Unsealed Tables
 A sealed table looks like this:
 
-```lua
+```luau
 local foo = {
     a = 1,
     b = 2,
@@ -14,7 +14,7 @@ local foo = {
 
 And an unsealed table looks like this:
 
-```lua
+```luau
 local foo = {}
 
 foo.a = 1
@@ -29,7 +29,7 @@ The reason modules and classes use unsealed tables is because of readability. If
 ## Writing and Reading Tables
 Use plain `key` syntax for writing dictionaries when possible, but if there are any entries that cannot follow that, then use `["key"]` syntax. This is easier to write and read. Example:
 
-```lua
+```luau
 local bar = {
     a = 1, -- ok
     ["b"] = 2, -- not ok
@@ -39,7 +39,7 @@ local bar = {
 
 Use dot (`table.value`) notation for accessing values in a dictionary table when possible (as opposed to something like `table["value"]`). Again, it's easier to write and read. Example:
 
-```lua
+```luau
 local a = bar.a -- ok
 local b = bar["b"] -- not ok
 local c = bar["letter c"] -- ok
@@ -49,7 +49,7 @@ local c = bar["letter c"] -- ok
 Every table entry should end with a comma, even a trailing one.
 
 Good example:
-```lua
+```luau
 local foo = {
     a = 1,
     b = 2,
@@ -58,7 +58,7 @@ local foo = {
 ```
 
 Bad example:
-```lua
+```luau
 local foo = {
     a = 1,
     b = 2,

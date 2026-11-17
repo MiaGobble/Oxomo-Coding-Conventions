@@ -5,7 +5,7 @@ Type every public function (both param and return), and type variables when not 
 
 Bad example:
 
-```lua
+```luau
 local function GetOtherFunction(foo)
     return function(bar)
         --...
@@ -15,7 +15,7 @@ end
 
 Good example:
 
-```lua
+```luau
 local function GetOtherFunction(foo : number) : (string) -> nil
     return function(bar : string)
         --...
@@ -26,7 +26,7 @@ end
 ## Exporting and storing types
 Types should be exported from modules when they represent data that is usable from outside the module, like so:
 
-```lua
+```luau
 export type MyType = string | number
 ```
 

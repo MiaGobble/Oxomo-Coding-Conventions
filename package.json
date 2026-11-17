@@ -1,0 +1,23 @@
+{
+  "name": "oxomo-coding-conventions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Practices and styles for Roblox Luau that prioritize readability and organization.",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiaGobble/Oxomo-Coding-Conventions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MiaGobble/Oxomo-Coding-Conventions/issues"
+  },
+  "homepage": "https://github.com/MiaGobble/Oxomo-Coding-Conventions#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

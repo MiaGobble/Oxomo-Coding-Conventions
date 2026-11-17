@@ -3,7 +3,7 @@ Everything works best when using a multi-script architecture. This means there i
 
 All script, asset, config, and other file names are in *pacal case* (`PascalCase`) capitalization.
 
-:::info
+::: info
 
 Avoiding a central framework allows for easy onboarding and non-strict development, which decreases hiring costs. Central frameworks tend to overcomplicate codebases, often leading to memory, typechecking, and design problems.
 
@@ -82,7 +82,7 @@ Store any common/shared modules in `SharedModules` (for example, utility modules
 
 Client-only modules should ALWAYS go under `ReplicatedFirst/Modules`. Server-only modules should ALWAYS go under `ServerScriptService/Modules`. This better respects the client-server boundary.
 
-:::info
+::: info
 
 Remotes can either be a folder of remote instances or a module representing remotes from a networking module.
 
@@ -108,7 +108,7 @@ Variable modularization is the smallest level of splitting up information into s
 
 Always require module using dot notation when possible:
 
-```lua
+```luau
 local ModuleA = require(path.to.module) -- Good
 local ModuleB = require("path/to/module") -- Bad
 ```

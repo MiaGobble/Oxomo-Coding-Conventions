@@ -6,7 +6,7 @@ Indentation is always done with tabs, not spaces.
 
 If you cannot tab, use 4 spaces.
 
-```lua
+```luau
 do
     do
         do
@@ -25,7 +25,7 @@ The rule of thumb is to always prefer a line break when programming anything if 
 
 Excessive line breaks are not acceptable, since it's just more you have to scroll through. Here is an example of excessive line breaks:
 
-```lua
+```luau
 local foo = 5
 
 

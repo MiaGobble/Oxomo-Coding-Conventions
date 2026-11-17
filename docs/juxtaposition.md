@@ -14,7 +14,7 @@ When possible, your code must have data organized in this order:
 * Class functions (when applicable)
 * Class object methods (when applicable)
 
-:::info
+::: info
 
 Juxtaposition is extremely important for consistency and readability, since it allows developers to quickly glance at a part of the code they assume will have the information they need.
 
@@ -24,7 +24,7 @@ Types, constants, services, imports, types extended, constants extended, and var
 
 Below is an example script showing proper juxtaposition and comments:
 
-```lua
+```luau
 local Class = {}
 Class.__index = Class
 
@@ -77,7 +77,7 @@ Imports should always be required in order that the variables for the folders fo
 
 Example:
 
-```lua
+```luau
 -- Imports (not properly ordered)
 local FolderA = path.to.folder
 local FolderB = path.to.folder
