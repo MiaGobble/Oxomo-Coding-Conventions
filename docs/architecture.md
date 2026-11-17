@@ -117,3 +117,6 @@ local ModuleB = require("path/to/module") -- Bad
 Seriously, don't. It's annoying to work with and causes friction in too many places. Central frameworks (like Knit) do not solve any real problems.
 
 Generally, we're against single-script architecture. Read more here: https://blog.igottic.com/ssa/
+
+## Files format
+Luau code should always be in `.luau` files, not `.lua`.
